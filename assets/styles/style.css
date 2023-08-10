@@ -1,21 +1,35 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+/*-------------importing fonts-----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
 
-
+/*---------------global styles-----------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/*------------------variables------------------*/
+:root {
+  --primary-color: #f44336;
+  --secondary-color: #fff;
+  --para-color: #777;
 }
 
 html {
   font-size: 62.5%;
 }
 
+/*-----------------header section start here----------------*/
 .header {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(3, 7.8, 26, 0.7), rgba(3, 7.8, 26, 0.7)),
+  background-image: linear-gradient(
+      rgba(3, 7.8, 26, 0.7),
+      rgba(3, 7.8, 26, 0.7)
+    ),
     url(https://images.unsplash.com/photo-1592280771190-3e2e4d571952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
   position: relative;
   background-size: cover;
@@ -23,34 +37,32 @@ html {
   overflow: hidden;
 }
 
-nav{
-    width: 100%;
-    height: 7rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4rem 7rem;
+nav {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 7rem;
+  overflow-y: hidden;
 }
 
-.logo a{
-    font-size: 3rem;
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-
+.logo img {
+  width: 80%;
+  margin-top: 1.8rem;
+  cursor: pointer;
 }
-
 .nav-lists ul li {
-    display: flex;
-    list-style: none;
-    font-size: 1.8rem;
-    gap: 3rem;
+  display: flex;
+  list-style: none;
+  font-size: 1.8rem;
+  gap: 3rem;
 }
 
-.nav-lists ul li a{
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
+.nav-lists ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .nav-lists ul li a::after {
@@ -58,7 +70,7 @@ nav{
   display: block;
   width: 0;
   height: 0.3rem;
-  background-color: #f44336;
+  background-color: var(--primary-color);
   margin: auto;
   transition: 0.3s;
 }
@@ -67,49 +79,223 @@ nav{
   width: 100%;
 }
 
+nav .fa-solid {
+  display: none;
+}
 
-.text-box{
-  
+.text-box {
   text-align: center;
-  color: #ffff;
+  color: var(--secondary-color);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50% ,-50%)
-
+  transform: translate(-50%, -50%);
 }
 
-.text-box h1{
+.text-box h1 {
   font-size: 5rem;
   font-weight: 600;
 }
 
-.text-box p{
+.text-box p {
   font-size: 1.5rem;
   font-weight: 400;
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+/*-----------------header section end here----------------*/
+
+/*-----------------course section start------------------*/
+.course-col {
+  flex-basis: 31%;
+  background-color: #fff3f3;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  margin: 2rem;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.hero-btn {
-  display: inline-block;
-  color: #ffff;
-  border: 1px solid #ffff;
-  background-color: transparent;
-  text-decoration: none;
+.course-col h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*-------------------course section end------------------*/
+
+/*-------------------campus section start------------------*/
+.campus-col {
+  flex-basis: 32%;
+  margin: 3rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.campus-col img {
+  width: 100%;
+  height: 100%;
+}
+
+.color-layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.color-layer:hover {
+  background: rgb(226, 0, 0, 0.7);
+}
+
+.campus-col h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.campus-col:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/*-------------------campus section end------------------*/
+
+/*-------------------facilities section start------------------*/
+.facility-col {
+  flex-basis: 31%;
+  border-radius: 1rem;
+  text-align: left;
+  margin: 2rem;
+}
+
+.facility-col img {
+  width: 41.5rem;
+  height: 40rem;
+  border-radius: 1rem;
+}
+
+.facility-col h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.facility-col p {
   font-size: 1.5rem;
-  padding: 1.5rem 2rem;
-  /* margin-top: 4rem; */
-  margin-top: 2rem;
-  
+  line-height: 2.5rem;
+  padding: 1rem;
+}
+/*-------------------facilities section end------------------*/
+
+/*-------------------testimonials section start------------------*/
+.testimonials {
+  padding-bottom: 12rem;
 }
 
+.testimonial-col {
+  display: flex;
+  flex-basis: 44%;
+  border-radius: 1rem;
+  text-align: left;
+  padding: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  margin: 2rem;
+}
 
+.testimonial-col img {
+  width: 21rem;
+  height: fit-content;
+  border-radius: 100rem;
+  margin-left: 3rem;
+}
 
+.testimonial-col h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.4rem 0;
+}
 
+.testimonial-col p {
+  line-height: 2.5rem !important;
+  padding: 0rem;
+}
 
+.testinomial-text {
+  padding-left: 3rem;
+}
 
+.star {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+/*-------------------testimonials section end------------------*/
 
-.container{
-    width: 90%;
-    margin: auto;
+/*-------------------call to action section start------------------*/
+.cta {
+  text-align: center;
+  padding-top: 12rem;
+  background-image: linear-gradient(
+      rgba(3, 7.8, 26, 0.7),
+      rgba(3, 7.8, 26, 0.7)
+    ),
+    url(https://media.istockphoto.com/id/1008681532/photo/male-operator-staff-with-team-working-call-center.jpg?s=612x612&w=0&k=20&c=-TkJIPv7s7eX1NqPlGk2yqNESr64LFdv8gcBM2TIXG4=);
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  padding: 10rem;
+}
+
+.cta h1 {
+  color: var(--secondary-color);
+}
+/*-------------------call to action section end------------------*/
+
+/*-------------------footer section start------------------*/
+.footer {
+  padding-bottom: 1rem;
+}
+
+.footer h4 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.footer p {
+  line-height: normal;
+}
+
+.icons .fa-brands {
+  color: var(--primary-color);
+  margin: 0 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1.8rem 0;
+}
+
+.arrow-up .fa-arrow-up {
+  color: black;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  background-color: var(--primary-color);
 }

@@ -1,0 +1,46 @@
+/*-----------ulility.css----------------*/
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.row {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.section-para {
+  color: #777;
+  font-size: 1.5rem;
+  padding: 1rem;
+  line-height: 3rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1.5rem 4rem;
+  margin-top: 4rem;
+}
+
+.hero-btn:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: 0.5s;
+}
+
+.txt-cntr-padd {
+  text-align: center;
+  padding-top: 8rem;
+}

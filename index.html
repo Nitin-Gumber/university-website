@@ -4,35 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDUford University</title>
+
+    <!--------------CSS Style file------------------->
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/mobile.css">
+    <link rel="stylesheet" href="assets/styles/utility.css">
+    <link rel="stylesheet" href="assets/styles/tab.css">
+
+    <!--------------Font Awesome cdn------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
 </head>
 <body>
 
+    <!------------header section start here---------------->
     <section class="header">
-       <nav>
-        <div class="logo">
-            <img src="" alt="">
-            <a href="index.html">EDUford</a>
+        <nav>
+            <div class="logo">
+                <img href="#" src="assets/img/logo.png" alt="">
+            </div>
+            <div class="nav-lists" id=" navlists">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                     <a href="#">HOME</a>
+                     <a href="#">ABOUT</a>
+                     <a href="#">COURSE</a>
+                     <a href="#">BLOG</a>
+                     <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Learn New Skills Online With Top Educators skills in programming, HTML, CSS, </br> JavaScript, design, photography, and more</p>
+            <a href="#" class="hero-btn">Visit Us To Know More</a>
         </div>
-        <div class="nav-lists">
-            <ul>
-                <li>
-                    <a href="#">HOME</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">COURSE</a>
-                    <a href="#">BLOG</a>
-                    <a href="#">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-       </nav>
-
-       <div class="text-box">
-              <h1>World's Biggest University</h1>
-              <p>Learn New Skills Online With Top Educators skills in programming, HTML, CSS, </br> JavaScript, design, photography, and more</p>
-                <a href="#" class="hero-btn">Visit Us To Know More</a>
-       </div>
     </section>
+
+    <!------------header section end here---------------->
+
+    <!------------course section start here---------------->
+    <section class="course container txt-cntr-padd">
+        <h1 class="section-title">Courses We Offer</h1>
+        <p class="section-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sint.</p>
+        <div class="row flex">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p class="section-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae labore sapiente sit nisi saepe officiis maxime facilis nulla. Modi!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p class="section-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae labore sapiente sit nisi saepe officiis maxime facilis nulla. Modi!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p class="section-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae labore sapiente sit nisi saepe officiis maxime facilis nulla. Modi!</p>
+            </div>
+        </div>
+    </section>
+
+    <!------------course section end here---------------->
+
+    <!-------------campus section start here---------------->
+    <section class="campus container txt-cntr-padd">
+        <h1 class="section-title">Over Global Campus</h1>
+        <p class="section-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sint.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="assets/img/london.png" alt="img">
+                <div class="color-layer">
+                    <h3>LONDAN</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="assets/img/newyork.png" alt="img">
+                <div class="color-layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="assets/img/washington.png" alt="img">
+                <div class="color-layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------campus section end here---------------->
+
+    <!-------------facilities section start here---------------->
+    <section class="facilities container txt-cntr-padd">
+        <h1 class="section-title">Our Facilities</h1>
+        <p class="section-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sint.</p>
+        <div class="row">
+            <div class="facility-col">
+                <img src="assets/img/library.png" alt="img">
+                <h3>World Class Library</h3>
+                <p class="section-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae labore sapiente sit nisi saepe officiis maxime facilis nulla. Modi!</p>
+            </div>
+            <div class="facility-col">
+                <img src="assets/img/basketball.png" alt="img">
+                <h3>Lagest Play Ground</h3>
+                <p class="section-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae labore sapiente sit nisi saepe officiis maxime facilis nulla. Modi!</p>
+            </div>
+            <div class="facility-col">
+                <img src="assets/img/cafeteria.png" alt="img">
+                <h3>Tasty And Healthy Food</h3>
+                <p class="section-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae labore sapiente sit nisi saepe officiis maxime facilis nulla. Modi!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------------facilities section end here---------------->
+
+    <!-------------testimonials section start here---------------->
+    <section class="testimonials container txt-cntr-padd">
+        <h1 class="section-title">What our Student Says</h1>
+        <p class="section-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sint.</p>  
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="assets/img/user1.jpg" alt="">
+                <div class="testinomial-text">
+                    <p class="section-para">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, earum ipsa quisquam, voluptas iste eos sit ex magnam similique rerum necessitatibus esse veniam accusamus quibusdam.
+                    </p>
+                    <h3>
+                        Luna Camila
+                    </h3>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star-half-stroke star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="assets/img/user2.jpg" alt="">
+                <div class="testinomial-text">
+                    <p class="section-para">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, earum ipsa quisquam, voluptas iste eos sit ex magnam similique rerum necessitatibus esse veniam accusamus quibusdam.
+                    </p>
+                    <h3>
+                        James Mary
+                    </h3>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-regular fa-star star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------testimonials section end here---------------->
+
+    <!------------call to action section start here------------->
+    <section class="cta container">
+        <h1 class="section-title">Enroll For Our Various Online Courses<br>Anywhere From the world</h1>
+        <a href="" class="hero-btn">CONTACT NOW</a>
+    </section>
+
+    <!------------call to action section end here------------->
+
+    <!------------footer section start here------------->
+    <section class="footer txt-cntr-padd">
+        <h4 class="section-title">About</h4>
+        <p class="section-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facere iure quae, nobis animi libero distinctio? <br> Distinctio laudantium recusandae sed voluptas tempore ducimus ullam quis. Officiis eveniet repellat enim temporibus?</p>
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <!------------footer section end here------------->
+
+    <!------------bottom to top here------------->
+    <div class="arrow-up">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div> 
+
+    <!------------JavaScript------------->
+    <script>
+
+        var navlists = document.getElementById("navlists");
+        function showMenu(){
+            navlists.style.right = "0";    
+        }
+        function hideMenu(){
+            navlists.style.right = "20rem";    
+        }
+
+    </script>
 
 </body>
 </html>
