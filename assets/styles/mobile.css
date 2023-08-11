@@ -2,7 +2,7 @@
 
   .header {
     width: 100vw;
-    height: 90vh;
+    height: 93vh;
   }
 
   nav {
@@ -95,10 +95,6 @@
 
   .course-col h3 {
     font-size: 1.6rem;
-  }
-
-  .course-col:hover {
-    display: none;
   }
 
   .campus-col img {
