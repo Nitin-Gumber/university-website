@@ -1,6 +1,13 @@
 @media screen and (max-width: 767px) {
+
+  .header {
+    width: 100vw;
+    height: 90vh;
+  }
+
   nav {
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
+    margin-top: -1rem;
   }
 
   .logo img {
@@ -37,12 +44,13 @@
   }
 
   .text-box h1 {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
   }
 
   .text-box p {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     margin-top: 0.5rem;
+    width: 25rem;
   }
 
   .hero-btn {
@@ -93,6 +101,10 @@
     font-size: 1.4rem;
   }
 
+  .course-col:hover {
+    display: none;
+  }
+
   .campus-col img {
     width: 70%;
     height: 70%;
@@ -103,9 +115,13 @@
     display: none;
   }
 
+  .facilities{
+    text-align: center;
+  }
+
   .facility-col {
     border-radius: 0.5rem;
-    margin: 1rem;
+    margin: 3rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,6 +182,10 @@
     padding-top: 8rem;
     border-radius: 0.5rem;
     padding: 6rem;
+  }
+
+  .cta h1{
+    font-size: 1.1rem;
   }
 
   .footer p {
