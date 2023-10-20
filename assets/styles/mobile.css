@@ -2,7 +2,7 @@
 
   .header {
     width: 100vw;
-    height: 93vh;
+    height: 100vh;
   }
 
   nav {
@@ -20,12 +20,13 @@
     position: absolute;
     background-color: var(--primary-color);
     height: 100vh;
-    width: 15rem;
+    width: 20rem;
     top: 0;
     right: -20rem;
     text-align: left;
     padding: 2rem 3rem;
     z-index: 2;
+    transition: 0.5s;
   }
 
   .nav-lists ul li {

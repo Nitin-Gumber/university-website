@@ -13,6 +13,7 @@
 
     <!--------------Font Awesome cdn------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="assets/index.js"></script>
     
 </head>
 <body>
@@ -23,8 +24,8 @@
             <div class="logo">
                 <img href="#" src="assets/img/logo.png" alt="">
             </div>
-            <div class="nav-lists" id=" navlists">
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <div class="nav-lists" id="navl">
+            <i class="fa-solid fa-xmark" id="hideMenu"></i>
                 <ul>
                     <li>
                      <a href="#">HOME</a>
@@ -35,7 +36,7 @@
                     </li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            <i class="fa-solid fa-bars" id="menubar"></i>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
@@ -191,17 +192,22 @@
     </div> 
 
     <!------------JavaScript------------->
+   <!-- Menu Bar using JavaScript -->
     <script>
+        "use strict"
 
-        var navlists = document.getElementById("navlists");
-        function showMenu(){
-            navlists.style.right = "0";    
-        }
-        function hideMenu(){
-            navlists.style.right = "20rem";    
-        }
+        const navl = document.getElementById('navl');
+        const menubar = document.getElementById('menubar');
+        const hideMenu = document.getElementById('hideMenu');
+        menubar.addEventListener('click', () => {
+            navl.style.right = '0';
+        })
+        hideMenu.addEventListener('click', () => {
+            navl.style.left = '-100%';
+        })
 
     </script>
+
 
 </body>
 </html>
