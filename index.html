@@ -25,7 +25,7 @@
                 <img href="#" src="assets/img/logo.png" alt="">
             </div>
             <div class="nav-lists" id="navl">
-            <i class="fa-solid fa-xmark" id="hideMenu"></i>
+                <i class="fa-solid fa-xmark" onclick="menuClose()"></i>
                 <ul>
                     <li>
                      <a href="#">HOME</a>
@@ -36,7 +36,7 @@
                     </li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" id="menubar"></i>
+            <i class="fa-solid fa-bars" onclick="menuopen()"></i>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
@@ -193,18 +193,9 @@
 
     <!------------JavaScript------------->
    <!-- Menu Bar using JavaScript -->
-    <script>
-        "use strict"
+    <script src="./assets/index.js">
 
-        const navl = document.getElementById('navl');
-        const menubar = document.getElementById('menubar');
-        const hideMenu = document.getElementById('hideMenu');
-        menubar.addEventListener('click', () => {
-            navl.style.right = '0';
-        })
-        hideMenu.addEventListener('click', () => {
-            navl.style.left = '-100%';
-        })
+
 
     </script>
 

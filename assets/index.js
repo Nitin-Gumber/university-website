@@ -1,10 +1,11 @@
-// Select the menu button and the menu container
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
+"use strict";
 
-// Add a click event listener to the menu button
-menuBtn.addEventListener('click', () => {
-    // Toggle the 'open' class on the menu button and the menu container
-    menuBtn.classList.toggle('open');
-    menu.classList.toggle('open');
-});
+const menuopen = () => {
+  const navl = document.querySelector("#navl");
+  navl.style.right = "0";
+};
+
+const menuClose = () => {
+  const hideMenu = document.querySelector("#navl");
+  hideMenu.style.right = "-20rem";
+};

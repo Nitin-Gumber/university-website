@@ -1,4 +1,8 @@
 /*-----------ulility.css----------------*/
+.hidden {
+  display: none;
+}
+
 .container {
   width: 90%;
   margin: auto;
